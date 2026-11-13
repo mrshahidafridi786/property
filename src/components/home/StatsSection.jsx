@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { fadeIn, staggerContainer } from "../../animations/variants";
+import { companyInfo } from "../../data/companyInfo";
 
-// Reusable Counter Sub-Component
-function CounterNumber({ value, suffix = "", duration = 1.5 }) {
+function CounterNumber({ value, prefix = "", suffix = "", duration = 1.5 }) {
   const [count, setCount] = useState(0);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
@@ -12,22 +12,19 @@ function CounterNumber({ value, suffix = "", duration = 1.5 }) {
   useEffect(() => {
     if (!isInView) return;
 
-    let start = 0;
-    const end = numericValue;
-    const totalFrames = Math.min(Math.floor(duration * 60), 100);
+    const totalFrames = Math.min(Math.floor(duration * 60), 90);
     let frame = 0;
 
     const counter = () => {
       frame++;
       const progress = frame / totalFrames;
-      // Ease out quad
-      const current = Math.round(end * (progress * (2 - progress)));
+      const current = Math.round(numericValue * (progress * (2 - progress)));
       setCount(current);
 
       if (frame < totalFrames) {
         requestAnimationFrame(counter);
       } else {
-        setCount(end);
+        setCount(numericValue);
       }
     };
 
@@ -36,36 +33,39 @@ function CounterNumber({ value, suffix = "", duration = 1.5 }) {
 
   return (
     <span ref={ref}>
-      {count}
-      {suffix}
+      {prefix}{count}{suffix}
     </span>
   );
 }
 
-const stats = [
+const statsList = [
   {
-    value: "500",
-    suffix: "+",
-    label: "Properties Managed",
-    desc: "Single units, blocks, and office towers"
+    prefix: "$",
+    value: "1400",
+    suffix: "M+",
+    label: "Assets Under Management",
+    desc: "Across residential, retail & commercial"
   },
   {
-    value: "1000",
+    prefix: "",
+    value: "650",
     suffix: "+",
-    label: "Happy Clients",
-    desc: "Landlords and corporate partners"
+    label: "Trophy Properties Managed",
+    desc: "Single villas, towers, and estates"
   },
   {
-    value: "20",
-    suffix: "+",
-    label: "Professional Services",
-    desc: "A comprehensive end-to-end suite"
+    prefix: "",
+    value: "99",
+    suffix: ".4%",
+    label: "Average Portfolio Occupancy",
+    desc: "Industry-leading tenant retention"
   },
   {
-    value: "10",
+    prefix: "",
+    value: "14",
     suffix: "+",
-    label: "Years Experience",
-    desc: "Guiding real estate assets to growth"
+    label: "Years Fiduciary Leadership",
+    desc: "Operating in New York, London & Dubai"
   }
 ];
 
@@ -73,8 +73,8 @@ export default function StatsSection() {
   return (
     <section className="py-20 bg-primary text-white relative overflow-hidden">
       
-      {/* Background visual styles */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(37,99,235,0.08),transparent_50%)] pointer-events-none" />
+      {/* Background radial gradient */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(37,99,235,0.12),transparent_60%)] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <motion.div
@@ -84,19 +84,19 @@ export default function StatsSection() {
           viewport={{ once: true, amount: 0.2 }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center"
         >
-          {stats.map((stat, idx) => (
+          {statsList.map((stat, idx) => (
             <motion.div
               key={stat.label}
               variants={fadeIn("up", "spring", idx * 0.1, 0.6)}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center text-center"
             >
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-3">
-                <CounterNumber value={stat.value} suffix={stat.suffix} />
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white mb-2.5">
+                <CounterNumber prefix={stat.prefix} value={stat.value} suffix={stat.suffix} />
               </h3>
-              <p className="text-sm font-bold text-accent mb-2 uppercase tracking-widest">
+              <p className="text-xs sm:text-sm font-bold text-accent mb-2 uppercase tracking-widest">
                 {stat.label}
               </p>
-              <p className="text-xs text-slate-400 font-light max-w-[200px]">
+              <p className="text-[11px] sm:text-xs text-slate-400 font-light max-w-[220px]">
                 {stat.desc}
               </p>
             </motion.div>

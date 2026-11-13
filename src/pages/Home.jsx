@@ -4,13 +4,13 @@ import AboutSection from "../components/home/AboutSection";
 import ServicesSection from "../components/home/ServicesSection";
 import StatsSection from "../components/home/StatsSection";
 import PropertiesSection from "../components/home/PropertiesSection";
+import YieldCalculator from "../components/home/YieldCalculator";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import WorkProcess from "../components/home/WorkProcess";
 import Testimonials from "../components/home/Testimonials";
 import FaqSection from "../components/home/FaqSection";
 
 export default function Home() {
-  // Ensure view scroll is reset on mount
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -22,6 +22,7 @@ export default function Home() {
       <ServicesSection />
       <StatsSection />
       <PropertiesSection />
+      <YieldCalculator />
       <WhyChooseUs />
       <WorkProcess />
       <Testimonials />

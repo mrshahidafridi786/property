@@ -1,195 +1,243 @@
-// Static data for the 24 services offered by Shan Property
+// Comprehensive 24 Specialized Services Offered by Aura Crest
 export const servicesData = [
   {
     id: 1,
     title: "Administrative Management of Property",
     category: "Administrative",
     iconName: "FolderKanban",
-    shortDesc: "Complete regulatory compliance, document processing, and administrative support for your real estate portfolio.",
-    longDesc: "We take care of all administrative requirements for your properties, including contract preparation, local regulatory filings, safety certificate compliance, insurance management, and formal notifications, allowing you to enjoy passive returns without the paperwork burden."
+    badge: "Fiduciary Compliance",
+    sla: "24-Hour SLA",
+    shortDesc: "Complete regulatory compliance, municipal filings, document processing, and administrative support for your real estate assets.",
+    longDesc: "We assume complete responsibility for all operational and regulatory administration. Our team handles lease contract preparation, local municipal filings, fire and life-safety certifications, landlord insurance policies, and formal statutory notifications, ensuring total passive ownership without administrative friction."
   },
   {
     id: 2,
     title: "Apartment Complex Management",
     category: "Residential",
     iconName: "Building2",
-    shortDesc: "End-to-end operational control and resident relations for multi-family apartment buildings.",
-    longDesc: "Specialized management of multi-unit apartment complexes. We handle everything from daily cleaning, groundskeeping, and waste disposal to community relations, unit turnarounds, sub-meter utility billing, and on-site staff supervision."
+    badge: "Multi-Family Scale",
+    sla: "On-Site & Digital",
+    shortDesc: "End-to-end operational oversight, sub-meter utility billing, and resident relations for multi-family apartment communities.",
+    longDesc: "Turnkey management for multi-unit apartment complexes. We coordinate on-site staff supervision, custodial and groundskeeping routines, preventative HVAC cycles, waste disposal contracts, digital tenant portals, and lease renewals to keep occupancy consistently above 98%."
   },
   {
     id: 3,
     title: "Condo Complex Management",
     category: "Residential",
     iconName: "Home",
-    shortDesc: "Structured management services catering to high-end condominium associations and private co-owners.",
-    longDesc: "Dedicated management for condominium developments. We protect shared value by managing common areas, enforcing by-laws, coordinating co-owner meetings, handling reserve fund allocations, and providing localized emergency response protocols."
+    badge: "HOA & Co-op",
+    sla: "White-Glove Standard",
+    shortDesc: "Structured management solutions catering to luxury condominium associations, boards, and high-net-worth co-owners.",
+    longDesc: "Dedicated management for luxury condominium developments. We protect shared building equity by managing common elements, enforcing bylaws, conducting transparent board meetings, managing reserve funds, and supervising dedicated white-glove concierges."
   },
   {
     id: 4,
-    title: "Credit Checks",
+    title: "Credit & Background Checks",
     category: "Administrative",
     iconName: "UserCheck",
-    shortDesc: "Rigorous background, financial, and employment screening for perspective tenants.",
-    longDesc: "Minimizing landlord risk starts with thorough credit checking. We compile comprehensive reports including credit history scores, past eviction searches, criminal records checks, employment verifications, and landlord reference verification."
+    badge: "Risk Mitigation",
+    sla: "Same-Day Report",
+    shortDesc: "Triple-bureau credit audits, criminal record searches, and employment screening for prospective high-caliber tenants.",
+    longDesc: "Mitigating landlord risk begins with uncompromising diligence. We compile forensic applicant reports covering triple-bureau credit scores, international asset checks, past tenancy dispute histories, verified tax filings, and personal reference audits."
   },
   {
     id: 5,
     title: "Estate Agency Services",
     category: "Agency",
     iconName: "Building",
-    shortDesc: "Bespoke matchmaking, viewings, negotiations, and sales agreements for luxury real estate.",
-    longDesc: "Providing top-tier representation for buyers, sellers, landlords, and tenants. Our agents use proprietary market databases to target properties, execute marketing programs, and negotiate advantageous closing terms."
+    badge: "Private Office",
+    sla: "Discrete Matchmaking",
+    shortDesc: "Bespoke matchmaking, confidential viewings, strategic negotiations, and purchase agreements for premier luxury real estate.",
+    longDesc: "Providing private client representation for buyers, sellers, landlords, and institutional investors. Our advisors leverage proprietary private databases to market off-market trophy assets, coordinate confidential private showings, and negotiate favorable closing terms."
   },
   {
     id: 6,
     title: "Holiday Property Management",
     category: "Specialized",
     iconName: "Palmtree",
-    shortDesc: "Maximizing short-term rental yields and guest satisfaction for vacation homes.",
-    longDesc: "Comprehensive management for vacation rentals. We optimize listings across major channels (Airbnb, Booking.com), manage automated dynamic pricing, handle guest check-ins/check-outs, and provide resort-standard cleaning services."
+    badge: "Short-Term Yields",
+    sla: "Resort-Grade Turnaround",
+    shortDesc: "Maximizing short-term vacation rental yields, dynamic seasonal pricing, and 5-star hospitality guest services.",
+    longDesc: "Turnkey management for prime holiday villas and seasonal chalets. We optimize multi-channel booking presence across luxury portals, deploy algorithmic dynamic pricing, provide 24/7 guest concierges, and conduct resort-standard sanitization between stays."
   },
   {
     id: 7,
-    title: "Home Management",
+    title: "Home Management & Estate Care",
     category: "Residential",
     iconName: "Home",
-    shortDesc: "Personal concierge and maintenance services for private luxury residences and estates.",
-    longDesc: "Ideal for homeowners who travel frequently. We perform weekly walkthroughs, supervise housekeeping, coordinate mail, water landscaping, oversee vendor repairs, and ensure your private residence is pristine for your arrival."
+    badge: "Private Concierge",
+    sla: "Weekly Walkthroughs",
+    shortDesc: "Personal concierge, climate monitoring, and preventative maintenance for private luxury residences and primary homes.",
+    longDesc: "Designed for owners of multiple estates. We execute bi-weekly comprehensive physical walkthroughs, oversee domestic staff and private chefs, manage smart climate and security automation, coordinate private deliveries, and ensure your residence is fully prepared for your arrival."
   },
   {
     id: 8,
-    title: "Homeowner Association Management",
+    title: "Homeowner Association (HOA) Management",
     category: "Administrative",
     iconName: "Users",
-    shortDesc: "Professional administrative and financial leadership for HOAs and residential subdivisions.",
-    longDesc: "Supporting HOA boards in maintaining community standards. We compile budgets, collect monthly dues, enforce covenants, organize annual general meetings, and contract community landscaping, pool, and security maintenance."
+    badge: "Governance",
+    sla: "Board Dedicated",
+    shortDesc: "Professional governance, transparent financial reporting, and operational leadership for master-planned communities.",
+    longDesc: "Supporting HOA boards with financial transparency and structural diligence. We prepare annual operational budgets, collect assessments, enforce community covenants, manage capital improvement projects, and oversee vendor contracts for landscaping, pools, and security."
   },
   {
     id: 9,
-    title: "Hotel Management",
+    title: "Hotel & Boutique Hospitality Management",
     category: "Specialized",
     iconName: "BedDouble",
-    shortDesc: "Hospitality operation services covering front-desk, booking channels, staff, and food services.",
-    longDesc: "Deploying professional hospitality directors to manage boutique hotels and guesthouses. We handle guest satisfaction indices, reservation pipelines, online reputation management, breakfast/dining logistics, and housekeeping audits."
+    badge: "Hospitality Scale",
+    sla: "24/7 Operations",
+    shortDesc: "Operational leadership covering front desk, revenue management, reservations, staff training, and guest experiences.",
+    longDesc: "Deploying seasoned hospitality executives to manage boutique luxury hotels and private guesthouses. We optimize RevPAR through targeted channel distributions, oversee food and beverage operations, ensure pristine housekeeping standards, and elevate guest satisfaction scores."
   },
   {
     id: 10,
     title: "Industrial Property Management",
     category: "Commercial",
     iconName: "Warehouse",
-    shortDesc: "Specialized logistics, lease structures, and facility maintenance for industrial warehouses.",
-    longDesc: "Management of warehouse parks, light industrial complexes, and logistics centers. We coordinate heavy-duty infrastructure maintenance, ensure compliance with environmental and industrial zoning laws, and structure long-term triple-net leases."
+    badge: "Logistics Hubs",
+    sla: "Asset Optimization",
+    shortDesc: "Specialized facility maintenance, environmental compliance, and long-term lease structures for logistics parks.",
+    longDesc: "Managing modern distribution warehouses, logistics parks, and flex-industrial facilities. We coordinate heavy structural infrastructure upkeep, monitor environmental and fire safety zoning compliance, and structure long-term triple-net (NNN) commercial leases."
   },
   {
     id: 11,
     title: "Island Property Management",
     category: "Specialized",
     iconName: "Waves",
-    shortDesc: "Logistically remote property management for island villas and private coastal resorts.",
-    longDesc: "Solving the complex logistics of island property upkeep. We manage self-sustaining utilities (solar, generators, water filtration), coordinate maritime transport for materials, control marine-grade erosion/corrosion, and provide remote security teams."
+    badge: "Remote Logistics",
+    sla: "Self-Sustaining",
+    shortDesc: "Self-sustaining infrastructure, maritime transport coordination, and remote asset upkeep for private coastal villas.",
+    longDesc: "Mastering the unique engineering challenges of remote and private island estates. We manage off-grid solar-battery microgrids, seawater reverse-osmosis desalination plants, marine transport logistics, coastal corrosion defenses, and on-site security detachments."
   },
   {
     id: 12,
-    title: "Property Inspections",
+    title: "Property Inspections & Audits",
     category: "Agency",
     iconName: "ClipboardCheck",
-    shortDesc: "Detailed safety, utility, and wear-and-tear audits with high-resolution photographic evidence.",
-    longDesc: "Regular physical inspections of your real estate assets. We draft check-in/check-out condition reports, routine mid-lease walkthrough logs, and identify latent structure or water ingress issues before they become costly emergencies."
+    badge: "Forensic Quality",
+    sla: "Digital Photolog",
+    shortDesc: "Detailed structural, MEP, and wear-and-tear condition audits backed by high-resolution photographic evidence.",
+    longDesc: "Comprehensive on-site technical walkthroughs. We generate 100-point inspection logs covering HVAC, electrical panels, plumbing pressure tests, roof integrity, and exterior waterproofing, identifying latent issues before they become costly capital expenditures."
   },
   {
     id: 13,
     title: "Property Investment Management",
     category: "Commercial",
     iconName: "TrendingUp",
-    shortDesc: "Portfolio diversification strategies, financial forecasting, and acquisition advisory.",
-    longDesc: "Helping investors achieve maximum capital appreciation and cash flow. We provide yield analysis, tax efficiency planning, market cycle advice, direct asset acquisition support, and property rehabilitation plans to drive rental appreciation."
+    badge: "Wealth Strategy",
+    sla: "Quarterly Review",
+    shortDesc: "Portfolio diversification, cash-flow forecasting, tax-advantaged structuring, and acquisition advisory for real estate capital.",
+    longDesc: "Empowering family offices and private investors to achieve superior risk-adjusted yields. We perform DCF underwriting, cap rate sensitivity models, tax-deferred 1031 exchange guidance, property repositioning plans, and direct off-market acquisition sourcing."
   },
   {
     id: 14,
-    title: "Property Maintenance",
+    title: "Property Maintenance & Preservation",
     category: "Maintenance",
     iconName: "Wrench",
-    shortDesc: "Preventative care routines and seasonal preparations to protect building value.",
-    longDesc: "A proactive approach to maintaining real estate assets. Includes HVAC servicing, gutter cleaning, roofing checks, pest control treatments, paint touch-ups, and winterization protocols carried out by vetted trade partners."
+    badge: "Preventative",
+    sla: "Scheduled Cycles",
+    shortDesc: "Proactive seasonal maintenance routines, HVAC servicing, and preventative preservation to protect building equity.",
+    longDesc: "Our predictive maintenance model prevents premature depreciation. Scheduled servicing includes HVAC filter changes, seasonal roofing and gutter audits, elevator certifications, plumbing backflow preventer tests, and architectural wood/stone restorative sealings."
   },
   {
     id: 15,
-    title: "Property Management",
+    title: "Comprehensive Property Management",
     category: "Agency",
     iconName: "Briefcase",
-    shortDesc: "Full-service landlord representation covering all operational, financial, and legal aspects.",
-    longDesc: "Our core signature package. We assume the full role of landlord representation: marketing vacant units, coordinating repairs, handling tenant disputes, and delivering transparent monthly financial accounting statements directly to your client dashboard."
+    badge: "Flagship Service",
+    sla: "Full Turnkey",
+    shortDesc: "Full-service landlord representation managing every operational, financial, tenant, and legal aspect of your real estate.",
+    longDesc: "Our premier all-inclusive asset care suite. Aura Crest acts as your surrogate landlord: executing lease agreements, collecting revenues, resolving maintenance dispatches, coordinating vendor contracts, and delivering institutional-grade monthly cash-flow reporting directly to your private dashboard."
   },
   {
     id: 16,
-    title: "Property Preservation",
+    title: "Property Preservation & Security",
     category: "Administrative",
     iconName: "ShieldAlert",
-    shortDesc: "Securing, winterizing, and protecting vacant or bank-foreclosed properties.",
-    longDesc: "Specialized service to secure and stabilize vacant assets. We handle lock changes, board-ups, lawn cuts, winterization, trash outs, code violation resolutions, and regular exterior inspections to prevent blight and decay."
+    badge: "Asset Defense",
+    sla: "Rapid Lockout",
+    shortDesc: "Securing, winterizing, climate-controlling, and monitoring vacant or transitionary high-value assets.",
+    longDesc: "Defending unoccupied residential and commercial properties against environmental decay, unauthorized entry, or utility failures. We execute high-security rekeying, winterization draining, moisture and temperature telemetry installations, and regular patrol check-ins."
   },
   {
     id: 17,
-    title: "Property Sales",
+    title: "Property Sales & Divestments",
     category: "Agency",
     iconName: "BadgePercent",
-    shortDesc: "Strategic pricing, premium staging, immersive virtual tours, and legal closing support.",
-    longDesc: "A targeted sales process to secure high-value transactions. We stage properties professionally, generate digital walk-through videos, run multi-channel digital ad campaigns, manage open houses, and draft final sales contracts."
+    badge: "High Valuation",
+    sla: "Global Exposure",
+    shortDesc: "Precision pricing, cinematic architectural cinematography, private staging, and discreet global buyer marketing.",
+    longDesc: "Strategic advisory to achieve benchmark sale valuations. We coordinate architectural staging, create 4K cinematic walkthroughs, target verified international high-net-worth buyers, organize private invitation-only viewings, and oversee closing escrows."
   },
   {
     id: 18,
-    title: "Property Valuation",
+    title: "Property Valuation & Appraisals",
     category: "Agency",
     iconName: "Scale",
-    shortDesc: "Rigorously researched market value appraisals for sale, tax, or refinancing purposes.",
-    longDesc: "Accurate real estate valuations backed by detailed comparable sales reports, historic trends, capitalization rate metrics, and current localized supply-demand curves. Essential for legal, estate, and banking submissions."
+    badge: "Certified RICS",
+    sla: "48-Hour Valuation",
+    shortDesc: "RICS-standard appraisals, comparative market analyses, and capitalization rate models for legal, tax, and sales.",
+    longDesc: "Institutional appraisal reports grounded in verifiable market comps, replacement cost analyses, and discounted cash flow modeling. Indispensable for estate planning, bank refinancing, insurance re-evaluations, and partnership buyouts."
   },
   {
     id: 19,
     title: "Rental Property Management",
     category: "Residential",
     iconName: "CalendarDays",
-    shortDesc: "Turnkey operational management for single-family rentals and townhomes.",
-    longDesc: "Making single-unit leasing completely stress-free. We coordinate landlord insurance, field emergency repair requests, handle lease renewals, track maintenance logs, and manage deposit holdings in compliant escrow accounts."
+    badge: "Turnkey Residential",
+    sla: "Automated Returns",
+    shortDesc: "Turnkey leasing and operational care for luxury single-family homes, townhouses, and private duplexes.",
+    longDesc: "Transforming residential rental ownership into a passive luxury annuity. We coordinate tenant move-ins, manage statutory security deposit escrow accounts, field all repair requests 24/7, and ensure lease agreements strictly comply with residential tenancy laws."
   },
   {
     id: 20,
-    title: "Rent Collection",
+    title: "Automated Rent Collection & Escrow",
     category: "Administrative",
     iconName: "Coins",
-    shortDesc: "Automated digital payment portals, collection enforcement, and direct landlord disbursements.",
-    longDesc: "Ensuring steady cash flows through direct deposit portals and swift action. We coordinate automated bank transfers, enforce strict grace periods, issue formal payment demands, and manage late-fee escalations legally."
+    badge: "Instant ACH/Wire",
+    sla: "Monthly Payout",
+    shortDesc: "Direct automated tenant payment portals, strict collection enforcement, and instant owner disbursements with clean ledger reports.",
+    longDesc: "Guaranteed cash flow discipline through our automated banking platform. We provide encrypted ACH and international wire portals, automate late fee applications, enforce lease payment deadlines, and disperse net funds directly into owner accounts with clean ledgers."
   },
   {
     id: 21,
-    title: "Repairs & Maintenance",
+    title: "24/7 Emergency Repairs & Engineering",
     category: "Maintenance",
     iconName: "Hammer",
-    shortDesc: "Rapid response troubleshooting and emergency repairs for plumbing, electrical, and HVAC.",
-    longDesc: "24/7 emergency repair response. We employ on-call certified plumbers, electricians, and HVAC technicians to resolve utility outages, leakages, and mechanical failures immediately, preserving tenant safety and asset structure."
+    badge: "Emergency Dispatch",
+    sla: "< 45-Min Response",
+    shortDesc: "Rapid-response emergency repairs for plumbing leaks, electrical outages, elevator faults, and HVAC emergencies.",
+    longDesc: "Around-the-clock emergency dispatch. Our certified network of licensed master plumbers, certified electricians, and HVAC technicians responds immediately to critical failures, mitigating asset damage and safeguarding resident well-being."
   },
   {
     id: 22,
-    title: "Security Services",
+    title: "Integrated Security & Surveillance Services",
     category: "Maintenance",
     iconName: "Shield",
-    shortDesc: "State-of-the-art surveillance installations, access control systems, and security personnel.",
-    longDesc: "Protecting properties from intrusion and vandalism. We design and install modern CCTV cameras, configure digital keycard access gates, oversee regular guard patrols, and link properties to rapid-response security dispatch centers."
+    badge: "Executive Protection",
+    sla: "Continuous 24/7",
+    shortDesc: "State-of-the-art biometrics, NDA-bound executive security personnel, CCTV integration, and remote perimeter monitoring.",
+    longDesc: "Protecting luxury assets and residents from security threats. We engineer perimeter surveillance networks, deploy digital smart-access doors, manage licensed physical security patrols, and establish direct emergency panic lines to local law enforcement dispatch."
   },
   {
     id: 23,
-    title: "Shop Management",
+    title: "Retail & Commercial Shop Management",
     category: "Commercial",
     iconName: "ShoppingBag",
-    shortDesc: "Lease coordination, foot-traffic optimization, and building management for retail stores.",
-    longDesc: "Specialized management for retail properties, strip malls, and shopping arcades. We coordinate storefront maintenance, manage merchant association guidelines, execute foot-traffic marketing, and structure base-plus-percentage rents."
+    badge: "High Footfall",
+    sla: "Tenant Coordination",
+    shortDesc: "Lease administration, common-area chargeback reconciliation, and foot-traffic optimization for luxury retail arcades.",
+    longDesc: "Specialized oversight for high-street boutiques, shopping gallerias, and flagship retail spaces. We manage common-area maintenance (CAM) reconciliations, coordinate storefront signage guidelines, and maintain pedestrian infrastructure to maximize tenant sales."
   },
   {
     id: 24,
-    title: "Tenant Management",
+    title: "Tenant Relations & Retention Management",
     category: "Administrative",
     iconName: "Contact",
-    shortDesc: "Fostering long-term tenant relationships from lease orientation to dispute resolution.",
-    longDesc: "Maintaining high tenant retention is the key to rental profitability. We manage welcome orientations, resolve neighbor complaints, coordinate maintenance communications, handle move-out walkthrough inspections, and manage deposit refund compliance."
+    badge: "High Retention",
+    sla: "Dedicated Liaison",
+    shortDesc: "Fostering long-term tenant satisfaction, seamless renewals, dispute mediation, and high lease-retention metrics.",
+    longDesc: "Long-term tenant retention is the single largest driver of real estate profitability. We manage seamless tenant onboarding, resolve complaints swiftly, host regular communication check-ins, and conduct graceful move-out walkthroughs with transparent escrow adjustments."
   }
 ];
